@@ -1,0 +1,27 @@
+/* Main background gradient */
+#app-content {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 2rem);
+  margin-top: 2rem;
+  background: #ffe5bb;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45.34deg,
+    #119da4 5.66%,
+    #9bc7b2 31.53%,
+    #ffe5bb 50.01%,
+    #ffbe99 72.18%,
+    #ff886a 94.35%
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45.34deg,
+    #119da4 5.66%,
+    #9bc7b2 31.53%,
+    #ffe5bb 50.01%,
+    #ffbe99 72.18%,
+    #ff886a 94.35%
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
