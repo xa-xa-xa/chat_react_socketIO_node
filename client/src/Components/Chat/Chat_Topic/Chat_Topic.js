@@ -15,7 +15,7 @@ const ChatTopic = ({ name, topic, users }) => {
           </div>
         </div>
       </td>
-      <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm overflow-x-auto'>
+      <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm'>
         <div className='flex pl-2'>
           {users.map((user, idx) => {
             return (
@@ -27,7 +27,7 @@ const ChatTopic = ({ name, topic, users }) => {
                   src={`https://api.adorable.io/avatars/128/${user.name}@adorable.png`}
                   alt={users.name}
                 />
-                <span className='absolute h-2 w-10 -mt-7 text-center'>
+                <span className='absolute h-4 w-24 -mt-7 -ml-2'>
                   {user.name}
                 </span>
               </div>
