@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
 import Chat from './Components/Chat/Chat/Chat';
-import Login_Page from './Components/Login_Page/Login_Page';
+import Login_Page from './Components/Login_Page/Login_Page.jsx';
 import ChatList from './Components/Chat/ChatsList/ChatList';
 
 //
