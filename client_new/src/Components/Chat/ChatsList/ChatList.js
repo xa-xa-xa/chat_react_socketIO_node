@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
+import { Context } from '../../../Context/Context';
+
 import UsersList from '../Users_List/Users_List';
 import ChatTopic from '../Chat_Topic/Chat_Topic';
-import { Context } from '../../../Context/Context';
 
 const ChatList = () => {
   const initialState = ['cats', 'dogs', 'hiking', 'cycling', 'Jokes', 'Movies'];

@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ChatTopic = ({ name, topic, users }) => {
