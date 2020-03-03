@@ -1,6 +1,10 @@
 import React from 'react';
 
 export const context = {
+  user: {
+    name: '',
+    loggedIn: true
+  },
   users: [
     { name: 'Mike Jacks', status: 'active' },
     { name: 'Voland', status: 'active' },
@@ -12,7 +16,8 @@ export const context = {
       status: 'active'
     },
     { name: 'Monica Lev', status: 'down' }
-  ]
+  ],
+  topics: ['cats', 'dogs', 'hiking', 'cycling', 'Jokes', 'Movies']
 };
 
 export const Context = React.createContext(context);
