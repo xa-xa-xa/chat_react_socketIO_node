@@ -1,7 +1,7 @@
 import React from 'react';
 import Message from '../Message/Message';
 
-const conversation = [];
+// const conversation = [];
 const MessagesBox = props => {
   return (
     <div className='bg-white h-full rounded-tr-lg border-2 '>

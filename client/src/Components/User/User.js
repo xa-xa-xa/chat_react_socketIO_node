@@ -9,12 +9,18 @@ const User = ({ name, avatar, lastMessage, lastSignIn, status }) => {
         return 'red';
       case 'typing':
         return 'orange';
+      default:
+        return 'black';
     }
   };
 
   return (
     <div className='flex items-center hover:bg-blue-500 rounded-l cursor-pointer antialiased'>
-      <img className='h-8 sm:h-10 w-8 sm:w-10 ml-2 rounded-full' src={avatar} />
+      <img
+        className='h-8 sm:h-10 w-8 sm:w-10 ml-2 rounded-full'
+        src={avatar}
+        alt={name}
+      />
       <span
         className={`bg-${statusColor(
           status
