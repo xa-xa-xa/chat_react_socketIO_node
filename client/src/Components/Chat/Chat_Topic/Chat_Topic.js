@@ -1,17 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import Join from '../Join/Join';
 
 const ChatTopic = ({ name, topic, users }) => {
+  const [showModal, setShowModal] = useState(false);
+  const show = () => setShowModal(!showModal);
+
   return (
     <tr>
       <td className='px-5 py-5 border-b border-gray-200 bg-white text-xs sm:text-sm'>
         <div className='flex items-center'>
           <div className='ml-2'>
-            <Link
-              to={`chat/${topic}`}
+            <button
+              onClick={show}
               className='text-gray-900 whitespace-no-wrap font-bold'>
               {topic}
-            </Link>
+            </button>
+            {showModal && <Join chatTopic={topic} openModal={showModal} />}
           </div>
         </div>
       </td>
