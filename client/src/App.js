@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar.jsx';
-import Conversation from './Components/Chat/Conversation/Conversation';
+import Conversation from './Components/Chat/Conversation/Conversation.jsx';
 import Login_Page from './Components/Login_Page/Login_Page.jsx';
 import ChatList from './Components/Chat/ChatsList/ChatList.jsx';
 import Join from './Components/Chat/Join/Join.jsx';
