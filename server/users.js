@@ -9,11 +9,12 @@ const addUser = ({ id, name, room }) => {
   const existingUser = users.find(
     user => user.room === room && user.name === name
   );
-  if (existingUser) return { error: 'This username is taken!' };
 
-  const newUser = { id, name, room };
-  users.push(newUser);
-  return { newUser };
+  if (existingUser) return { error: `Username "${name}" is taken!` };
+
+  const user = { id, name, room };
+  users.push(user);
+  return { user };
 };
 
 //
