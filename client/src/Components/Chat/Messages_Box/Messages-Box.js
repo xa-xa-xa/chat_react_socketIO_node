@@ -2,17 +2,19 @@ import React from 'react';
 import Message from '../Message/Message';
 
 // const conversation = [];
-const MessagesBox = props => {
+const MessagesBox = ({ messages }) => {
   return (
-    <div className='bg-white h-full rounded-tr-lg border-2 '>
-      {/* {conversation.map((msg, idx) => { */}
-      <Message text={'Hi!'} user={'Alex'} createdAt={'10:35pm, today'} />
-      <Message
-        text={'Hello :-) !!!'}
-        user={'Ira'}
-        createdAt={'6:45pm, yesterday'}
-      />
-      {/* })} */}
+    <div className='bg-white h-full p-2 overflow-scroll'>
+      {messages.map((message, idx) => {
+        return (
+          <Message
+            key={idx}
+            text={message.text}
+            user={message.user}
+            createdAt={'10:35pm, today'}
+          />
+        );
+      })}
     </div>
   );
 };
