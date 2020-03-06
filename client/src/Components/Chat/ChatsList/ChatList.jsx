@@ -47,7 +47,7 @@ const ChatList = () => {
             </thead>
             <tbody>
               {topics.map((topic, idx) => (
-                <ChatTopic users={users} topic={topic} key={idx} />
+                <ChatTopic users={users} topic={topic.name} key={idx} />
               ))}
             </tbody>
           </table>
