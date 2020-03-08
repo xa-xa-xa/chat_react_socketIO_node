@@ -3,8 +3,8 @@ const users = [];
 //
 const addUser = ({ id, name, room }) => {
   // unify name and room
-  name.trim().toLowerCase();
-  room.trim().toLowerCase();
+  name.trim();
+  room.trim();
 
   const existingUser = users.find(
     user => user.room === room && user.name === name
