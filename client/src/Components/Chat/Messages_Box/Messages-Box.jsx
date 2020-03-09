@@ -4,7 +4,7 @@ import Message from '../Message/Message';
 
 // const conversation = [];
 const MessagesBox = ({ messages, currentUser }) => (
-  <ScrollToBottom className='overflow-auto'>
+  <ScrollToBottom className='overflow-auto p-1 mb-8 -mt-1'>
     {messages.map((message, idx) => {
       return (
         <Message
