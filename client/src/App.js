@@ -15,7 +15,7 @@ function App() {
       <div
         id='app-content'
         className='justify-center antialiased shadow main-gradient'>
-        <div className='w-full sm:mx-4 md:mx-8 lg:w-3/4 sm:mb-4 sm:mt-10 sm:rounded-lg'>
+        <div className='w-full sm:mx-4 md:mx-8 lg:w-3/4 sm:mb-4 sm:mt-10'>
           <Router>
             <Route component={Login_Page} path={'/login'} exact />
             <Route component={Conversation} path={'/chat'} exact />

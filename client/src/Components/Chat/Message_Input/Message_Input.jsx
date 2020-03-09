@@ -2,7 +2,7 @@ import React from 'react';
 
 const MessageInput = ({ message, sendMessage, setMessage }) => {
   return (
-    <form className='flex align-end border rounded-br-lg h-12 absolute inset-x-0 bottom-0 overflow-hidden'>
+    <form className='flex align-end border-t-2 h-12 absolute inset-x-0 bottom-0'>
       <input
         type='text'
         value={message}

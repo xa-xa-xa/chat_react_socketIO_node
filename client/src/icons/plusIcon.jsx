@@ -3,17 +3,14 @@ import React from 'react';
 const plusIcon = () => {
   return (
     <svg
-      className='w-8 h-8 fill-current hover:h-10 hover:w-10'
+      className='fill-current'
       version='1.1'
       id='Capa_1'
       xmlns='http://www.w3.org/2000/svg'
       xmlnsXlink='http://www.w3.org/1999/xlink'
       x='0px'
       y='0px'
-      width='414.312px'
-      height='414.312px'
       viewBox='0 0 414.312 414.312'
-      // style={{ enableBackground: 'new 0 0 414.312 414.312' }}
       xmlSpace='preserve'>
       <g>
         <path

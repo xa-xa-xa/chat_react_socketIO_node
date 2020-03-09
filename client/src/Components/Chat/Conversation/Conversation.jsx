@@ -22,8 +22,9 @@ const Conversation = ({ location }) => {
   const [conversation, setConversation] = useState([]);
   const [users, setUsers] = useState([]);
 
-  const ENDPOINT = 'localhost:5000';
-
+  // const ENDPOINT = 'localhost:5000';
+  const ENDPOINT =
+    'https://chat-app-react-node-soketio.herokuapp.com/' || 'localhost:5000';
   //Joining/disconnecting user to/from the conversation
   useEffect(() => {
     const { name, room } = querystring.parse(location.search);
@@ -70,9 +71,9 @@ const Conversation = ({ location }) => {
   };
 
   return (
-    <div className='flex flex-row h-full rounded-lg overflow-hidden border-2'>
+    <div className='flex flex-row  h-full rounded-lg overflow-hidden border-2'>
       <UsersList users={users} />
-      <div className='flex relative flex-col bg-white rounded-r-lg w-1/2 sm:w-2/3 lg:w-3/4'>
+      <div className='flex relative flex-col bg-white w-1/2 sm:w-2/3 lg:w-3/4'>
         <InfoBar room={room} />
         <MessageBox messages={conversation} currentUser={name} />
         <MessageInput

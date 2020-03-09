@@ -9,11 +9,8 @@ import Join from '../Join/Join.jsx';
 import PlusIcon from '../../../icons/plusIcon';
 
 const ChatList = () => {
-  const { users } = useContext(Context);
-  const { topics } = useContext(Context);
+  const { users, topics } = useContext(Context);
 
-  // const [chatTopics, setChatTopics] = useState(topics);
-  // const [chatUsers, setChatUsers] = useState(users);
   const [createNewTopic, setCreateNewTopic] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -23,24 +20,23 @@ const ChatList = () => {
   }
 
   return (
-    <div className='flex flex-row h-full'>
+    <div className='flex flex-row h-full sm:rounded-lg overflow-hidden border-2'>
       <UsersList users={users} />
-
-      <div className='flex relative flex-col bg-white  rounded-r-lg overflow-hidden w-1/2 sm:w-2/3 lg:w-3/4'>
+      <div className='flex relative flex-col bg-white overflow-hidden w-1/2 sm:w-2/3 lg:w-3/4'>
         <div>
           <table className='leading-normal w-full'>
             <thead>
               <tr>
-                <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
+                <th className='px-5 py-1 sm:py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
                   Topic
                 </th>
-                <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
+                <th className='px-5 py-1 sm:py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
                   Participants
                 </th>
-                <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
+                <th className='px-5 py-1 sm:py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
                   Created at
                 </th>
-                <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
+                <th className='px-5 py-1 sm:py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
                   Status
                 </th>
               </tr>
@@ -68,7 +64,7 @@ const ChatList = () => {
           </div>
           <button
             onClick={() => addNewTopic()}
-            className='border border-grey-300 rounded-full p-2 text-teal-800 hover:text-teal-500 main-gradient'>
+            className='border border-grey-300 rounded-full p-2 fill-current text-teal-800 hover:border-teal-400 hover:text-teal-500 w-10 h-10 hover:h-10 hover:w-10'>
             <PlusIcon />
           </button>
           {showModal && (

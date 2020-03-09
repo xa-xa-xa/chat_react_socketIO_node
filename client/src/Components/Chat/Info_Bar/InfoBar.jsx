@@ -10,7 +10,7 @@ const InfoBar = ({ room }) => {
       <div
         id='leftInnerContainer'
         className='flex flex-row w-11/12 items-center'>
-        <div className='text-red-500 fill-current w-12 ml-2 p-1'>
+        <div className='text-gray-700 fill-current w-12 ml-2 p-1'>
           <OnlineIcon />
         </div>
         <h3 className='text-grey-400 text-xl w-full text-center font-bold'>
